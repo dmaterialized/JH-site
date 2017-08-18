@@ -1,0 +1,8 @@
+- home page is called "main".
+- on the main page, it has a full list of category links (plus sidebar links, other nav)
+
+- Alpha links go to alpha page.
+- Category links go to specific "c_#xxxxxxx" pages which are subdivided by region (CA, CT, etc.).
+    -On each c_#xxxx page, items go to a LISTING page. (listing.html)
+- "categoryindex" page is one long page of all c_#xxxxx pages.
+- Individual items are on LISTING.html

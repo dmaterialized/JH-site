@@ -1,0 +1,160 @@
+* {
+margin:0;
+padding: 0;
+}
+
+html,body {font-family: 'Roboto Slab', 'Lato', 'Arial';
+font-weight: 300;
+font-size: 16px;
+text-rendering: optimizeLegibility;
+overflow-x: hidden;
+
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 465px){
+
+  body{
+    font-size: 85%;
+  }
+
+.entry-header, .category-header {
+height: 55px!important;
+line-height: normal;
+padding-bottom:12px;
+margin-top:-15px;
+background-color: #fff!important;
+text-align:center;
+}
+
+.entry-header h1{
+  margin-bottom: 0px;
+}
+
+.entry{
+  margin-left: 3%!important;
+  margin-right: 3%!important;
+}
+
+.entry-details{
+  margin-right:6px!important;
+  margin-top: 12px!important;
+  margin-bottom:1px!important;
+}
+
+}
+
+/* END MEDIA QUERIES */
+
+
+
+body {
+background-color: #cecede;
+}
+
+/*
+=========================== HEADER ===============================
+ */
+
+ .header{
+  background-color: #fff;
+  width:100%;
+  padding:1px 1px;
+  margin-top:-8px;
+  margin-left:-6px;
+  padding-bottom:0px;
+  line-height: 3em;
+}
+
+.header h1{
+  margin: 0px 5px;
+}
+
+.parallax{
+  background-color: #cedece;
+}
+
+
+.header h1{
+  padding:6px 15px;
+}
+
+/*
+=========================== ENTRY ===============================
+ */
+
+.entry {
+  margin-left:9%;
+  margin-right: 9%;
+  padding-top:0px;
+  background-color:#fff;
+}
+
+.entry-header{
+  background-color: #dedede;
+  height: 120px;
+  font-size:90%;
+  transition: 0.5s ease-in;
+}
+
+.entry-categorylist{
+  clear: both;
+  text-align:center;
+  margin-top:40px;
+  background-color:#c9d9f2;
+}
+.entry-header h1{
+  margin-left:2%;
+  margin-right:2%;
+}
+
+.entry h1, .entry h2, .entry h3 {
+  padding: 3px;
+}
+
+.entry-body {
+  /*-- TODO: all of this needs change to percentages */
+  margin-left:2%;
+  margin-right: 2%;
+  width:70%;
+  font-size:1em;
+  line-height:normal;
+}
+
+.entry-details{
+  margin: 20px;
+  padding:10px;
+  line-height: 230%;
+  font-size:0.8em;
+  float:right;
+  width: 30%;
+  background-color: #dedede;
+}
+
+.entry-details h3{
+  font-family: monospace;
+
+}
+
+
+/* ==========================================================================*/
+
+
+/*
+=========================== FOOTER ===============================
+ */
+.footer {
+  display:block;
+  height: 58px;
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+  position: relative;
+  background-color: #dedece;
+}
+
+.footer h1{
+  font-size: 1em;
+  margin-top:0px;
+  padding: 0px 7px;
+  text-align: center;
+}
