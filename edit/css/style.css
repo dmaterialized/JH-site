@@ -36,7 +36,6 @@ overflow-x: hidden;
     
     
 .entry-header, .category-header {
-height: 665px!important;
 line-height: normal;
 padding-bottom:12px;
 margin-top:-15px;
@@ -70,14 +69,20 @@ text-align:center;
   margin-left: 3%!important;
   margin-right: 3%!important;
 }
+    
+    .entry-body{
+        float:left;
+    }
 
 .entry-details{
   margin-right:6px!important;
-  margin-top: 12px!important;
+  margin-top: 2px!important;
   margin-bottom:1px!important;
+clear:both;
 }
+    
+    
 
-}
 
 /*
  * ===============
@@ -87,8 +92,13 @@ text-align:center;
  * ===============
  * 
  * 
- **/
-    
+ down here **/
+}
+
+
+
+
+
 
 body {
 background-color: #cecede;
