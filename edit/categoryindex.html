@@ -34,7 +34,6 @@ Probably can be improved.
       <!-- add viewport so mobile devices set everything to 1.0 scale. !-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 <div class="wrapper">
 
 
@@ -44,35 +43,38 @@ Probably can be improved.
         <h1>Parallax section (contains search bar).</h1>
       
     
-        <! ====== NAV AREA =========>
-    <div class="row">
-        <div class="col">
-        <ul>
-            <div class="nav-top">
+    <! ====== NAV AREA =========>
+<nav class="navbar navbar-default navbar-static-top"></nav>
+          <div class="container-fluid">
+        <ul class="nav-top">
             <li>Order</li>
             <li>Contact</li>
             <li>About</li>
             <li>History</li>
-            </div>
         </ul>
-        </div>
-        </div>
+      </div>
         </div>
 
     <!-- TODO: this is where the search bar will go -->
 <!--<input type="text" class="col" name="search" value="Search" action="submit">-->
 
     </div>
+    <!-- end header -->
     
-    
-      <div class="category-header">
-      <h1> Major Categories</h1></div>
-      <div class="container category-list">
+    <!-- =======CATEGORY LIST========= -->
+    <div class="container">  
+        <div class="category-header">
+            <h1> Major Categories</h1>
+        </div>
+      <div class="category-list">
+          <!-- TODO: maybe make this scale to three columns -->
+      <!-- this is where the list starts and splits into 2 divs. -->
       <div class="row">
-          <div class="col">
+          <div class="col-sm">
+              <!-- div 1 -->
           <ul>
-          <li>Abuse - Horses - Humane Organizations</li>
-          <li>Art and Photography - Equine</li>
+          <li><a href="#">Abuse - Horses - Humane Organizations</a></li>
+          <li><a href="#">Art and Photography - Equine</a></li>
           <li>Associations and Clubs - Equine</li>
           <li>Boarding - Horses</li>
           <li>Breeding Farms - Horses</li>
@@ -85,10 +87,11 @@ Probably can be improved.
           <li>Feed - Hay - Bedding</li>
           </ul>
             </div>
-          <div class="col">
+          <div class="col-sm">
+                <!-- div 2 -->
           <ul>
-          <li>Fun With Horses</li>
-          <li>Horse Shows and Events</li>
+          <li><a href="#">Fun With Horses</a></li>
+          <li><a href="#">Horse Shows and Events</a></li>
           <li>Health - Veterinary Services - Equine</li>
           <li>Instruction - Riding Horses</li>
           <li>Marketing & Management Services - Equine</li>
@@ -101,22 +104,23 @@ Probably can be improved.
           <li>Transportation Horses, Trailers, Trucks</li>
           </ul>   
           </div>
-          
       </div>
-      <div class="">
-          
-          
-          </div>
-          
-          
-          
+    </div>
+        <!-- end cat list -->
+ </div> 
         
-<!-- end wrapper -->
-      </div>
+<!-- end wrapper -->  
+</div>
       
-        <div class="footer">
-          </div>
+        
+<div class="footer">
+            <h1><strong>Just Horses is published each April - </strong> Web listings are updated quarterly.<br /><br />Copies of Just Horses can be obtained FREE in tack and feed stores and by mail. <br />Send $2.50 postage to: Just Horses, PO Box 10, Huntington, MA 01050
+                <br />  
+                <br/>
+                Listing in Just Horses directory implies no endorsement by Just Horses or the Young Equestrian Fund, Inc.</h1>
       </div>
-
+      <!-- end footer -->
+      
+      
     </body>
 </html>

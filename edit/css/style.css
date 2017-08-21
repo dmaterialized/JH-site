@@ -1,3 +1,14 @@
+/* 
+ * 
+ * 
+ * JUSTHORSES CSS
+ * 
+ * © DM Cook
+ * Spacegoose
+ * 
+ *  */
+
+
 * {
 margin:0;
 padding: 0;
@@ -8,24 +19,44 @@ font-weight: 300;
 font-size: 16px;
 text-rendering: optimizeLegibility;
 overflow-x: hidden;
-
 }
+
+
+ li{
+        list-style-type: none;
+    }   
+    
 
 /* MEDIA QUERIES */
 @media (max-width: 465px){
-
+    
   body{
     font-size: 85%;
   }
-
+    
+    
 .entry-header, .category-header {
-height: 55px!important;
+height: 665px!important;
 line-height: normal;
 padding-bottom:12px;
 margin-top:-15px;
 background-color: #fff!important;
 text-align:center;
 }
+    
+.category-header h1 {
+    text-align: center;
+    font-size: 300px;
+/* 
+ * redundant:   
+ * list-style-type: none;  */ 
+    }
+/*    TODO: on mobile, set left column to float to top, right column to float to bottom*/
+/*
+    .category-list :first-child {
+        float:left;
+    }
+*/
 
 .entry-header h1{
   margin-bottom: 0px;
@@ -44,9 +75,16 @@ text-align:center;
 
 }
 
-/* END MEDIA QUERIES */
-
-
+/*
+ * ===============
+ * 
+ * END MEDIA QUERIES 
+ * 
+ * ===============
+ * 
+ * 
+ **/
+    
 
 body {
 background-color: #cecede;
@@ -80,20 +118,27 @@ background-color: #cecede;
 }
 
 
-nav-top {
-    width: 25%;
-    padding:0px;
-}
 
-/*
+
 search {
     width: 100%;
     padding: 3px;
 }
-*/
-/*
-=========================== ENTRY ===============================
- */
+
+
+/* ============== NAV =========== */
+
+.nav-top ul li {
+    display: inline;
+    margin:30%;
+    font-size: 300%;
+    list-style: disc;
+}
+
+
+
+/*=========================== ENTRY ===============================*/
+ 
 
 .entry {
   margin-left:9%;
@@ -125,7 +170,7 @@ search {
 }
 
 .entry-body {
-  /*-- TODO: all of this needs change to percentages */
+/*  -- TODO: all of this needs change to percentages */
   margin-left:2%;
   margin-right: 2%;
   width:70%;
@@ -149,24 +194,24 @@ search {
 }
 
 
-/* ==========================================================================*/
+
+/* ==========================================================================
 
 
 /*
 =========================== FOOTER ===============================
  */
 .footer {
-  display:block;
-  height: 58px;
-  width: 100%;
+  display: block;
+  clear:left;
+  height: 180px;
   padding: 10px 0px 0px 0px;
-  position: relative;
   background-color: #dedece;
 }
 
 .footer h1{
   font-size: 1em;
   margin-top:0px;
-  padding: 0px 7px;
+  padding: 10px 2px;
   text-align: center;
 }
