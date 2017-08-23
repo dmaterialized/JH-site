@@ -37,29 +37,35 @@ overflow-x: hidden;
     
 .entry-header, .category-header {
 line-height: normal;
-padding-bottom:12px;
-margin-top:-15px;
-background-color: #fff!important;
+padding: 28px 3px 0px 0px;
+margin-top:-10px;
 text-align:center;
 }
+   
+    .footer h1 {
+        margin: 1px 25px!important;
+    }
     
 .category-header h1 {
     text-align: center;
-    font-size: 300px;
-/* 
- * redundant:   
- * list-style-type: none;  */ 
-    }
-/*    TODO: on mobile, set left column to float to top, right column to float to bottom*/
 /*
-    .category-list :first-child {
-        float:left;
-    }
+    font-size: 40px;
+    margin: 12px;
 */
-    
-    .category-list ul li {
-        padding-bottom: 30px;
     }
+}
+
+    @media (max-width: 758px){
+    .category-list ul {
+        font-size: 0.91em;
+        padding: 0px;
+        margin-bottom: 0px!important;
+    }
+        .category-list {
+            margin-bottom: 0px;
+        }
+
+
 
 .entry-header h1{
   margin-bottom: 0px;
@@ -72,16 +78,29 @@ text-align:center;
     
     .entry-body{
         float:left;
+        clear:right;
     }
 
-.entry-details{
-  margin-right:6px!important;
-  margin-top: 2px!important;
-  margin-bottom:1px!important;
-clear:both;
+.entry-details {
+    width: 80%!important;
+    padding:0px;
+    margin: 5px;
 }
     
-    
+    .category-list{
+        font-size: 1.11em!important;
+        margin-bottom:0px!important;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .category-list{
+        font-size: 0.91em;
+    }
+}
+
+
 
 
 /*
@@ -93,9 +112,6 @@ clear:both;
  * 
  * 
  down here **/
-}
-
-
 
 
 
@@ -116,6 +132,12 @@ background-color: #cecede;
   margin-left:-6px;
   padding-bottom:0px;
   line-height: 3em;
+}
+
+.headerimg {
+    width: 100%;
+    align:center;
+    margin-bottom:10px; 
 }
 
 .header h1{
@@ -192,16 +214,17 @@ transition: ease-in-out 0.7s;
   width:70%;
   font-size:1em;
   line-height:normal;
+
 }
 
 .entry-details{
   margin: 20px;
-  padding:10px;
-  line-height: 230%;
+  padding:8px;
+  line-height: 200%;
   font-size:0.8em;
-  float:right;
   width: 30%;
   background-color: #dedede;
+    float:right;
 }
 
 .entry-details h3{
@@ -222,7 +245,8 @@ transition: ease-in-out 0.7s;
   clear:left;
   height: 180px;
   padding: 10px 0px 0px 0px;
-  background-color: #dedece;
+    background-color: #e9c89e;
+/*  background-color: #dedece;*/
 }
 
 .footer h1{
