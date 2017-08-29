@@ -19,14 +19,12 @@ Probably can be improved.
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css"  />
 <link rel="stylesheet" ref="../vendors/css/grid.css" />
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Caveat|Caveat+Brush|Merienda+One" rel="stylesheet">
    
 <!--  	<?PHP include  "JavaInclude.txt " ?>" &"-->
 </head>
 
-    
-    
-    
+            
     
     
     
@@ -37,11 +35,12 @@ Probably can be improved.
 <div class="wrapper">
     
 <div class="header">
-        <div class=" headerimg"><h2>Just Horses</h2><h3>A Directory for New England and Eastern New York</h3>
+        <div class=" headerimg"><div class="header-text"><h2>Just Horses</h2><h3>A Directory for New England and Eastern New York</h3></div>
 <!--    <img src="img/JustHorses_logo-scaled-v5.jpg"  alt="Just Horses logo">-->
     </div>
       <div class="parallax">
-        <h1>Parallax section (contains search bar).</h1>
+          <div class="searchitems form-inline"><form class="form-inline"><input type="text" class="form-control" size="36" value="Search JustHorses" label="textsearch" formaction="Submit"/><input type="button" class="btn-primary" size="35" value="  Search  " formaction="Submit"></form>
+          </div>
       
     
     <! ====== NAV AREA =========>
@@ -73,7 +72,7 @@ Probably can be improved.
           <!-- TODO: maybe make this scale to three columns -->
       <!-- this is where the list starts and splits into 2 divs. -->
       <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
               <!-- div 1 -->
           <ul>
           <li><a href="#">Abuse - Horses - Humane Organizations</a></li>
@@ -90,7 +89,7 @@ Probably can be improved.
           <li>Feed - Hay - Bedding</li>
           </ul>
             </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
                 <!-- div 2 -->
           <ul>
           <li><a href="#">Fun With Horses</a></li>
