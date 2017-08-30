@@ -8,6 +8,10 @@
  * 
  *  */
 
+/* TODO: set media queries to scale to 320px by long (vertical iPhone screen) all the way to landscape layouts where search and text are being moved incorrectly 
+ * 
+ * */
+
 
 * {
 margin:0;
@@ -39,6 +43,20 @@ overflow-x: hidden;
 @media only screen and (max-width: 950px) {
     .category-list{
         font-size: 0.91em;
+    }
+    
+    .headerimg h3 { 
+        font-size:1.5em;
+    }
+}
+
+@media (max-width: 899px){
+    .headerimg h3 {
+        font-size: 1.4em!important;
+    }
+    
+    .headerimg {
+        background-size:cover!important;
     }
 }
 
@@ -116,7 +134,8 @@ h1{
   }
     
     .headerimg {
-    
+    height: 66%;
+        background-size:contain!important;
     }
     
     
@@ -142,7 +161,7 @@ text-align:center;
 }
 @media only screen and (max-width:450px){
     .headerimg{
-        height: 46%!important;
+        height: 66%!important;
         background-size:cover!important;
     }
 }
@@ -150,8 +169,23 @@ text-align:center;
 @media only screen and (max-width:430px){
 /*    .searchitems btn-primary{*/
 /*    width: 15%;*/
-/*    margin: 50%;
+/*    margin: 50xr%;
 }*/
+    
+    .headerimg {
+        height: 66%!important;
+    }
+    
+    .nav-item {
+        display: block!important;
+    }
+    
+}
+
+@media only screen and (max-width: 320px){
+    .headerimg {
+        height: 62%!important;
+    }
 }
 
 /*
@@ -189,7 +223,7 @@ background-color: #cecede;
 }
 .headerimg {
     background: url(../img/JustHorses_logo-cropped-v6.jpg);
-    background-size:contain;
+    background-size:cover;
     background-position:top center;
     background-repeat: no-repeat;
     height: 65%;
@@ -199,13 +233,16 @@ background-color: #cecede;
 .headerimg h2{
     font-size: 2.3em;
     line-height:normal;
+    padding-top: 34%
 }
 
 .headerimg h3{
-    font-size:2em;
-    margin:0 10%;
+    font-size:1.75em;
+    font-family: 'Roboto Slab';
+    margin:0 5%;
     line-height:normal;
-    padding-top: 12px;
+    padding-top: 28px;
+    padding-bottom:5px;
 }
 
 .headerimg h2, .headerimg h3{
