@@ -4,7 +4,7 @@
  * JUSTHORSES CSS
  * 
  * © DM Cook
- * Spacegoose
+ * Spacegoose.net
  * 
  *  */
 
@@ -20,9 +20,13 @@ padding: 0;
 
 html,body {font-family: 'Merienda One', 'Lato', 'Arial';
 font-weight: 300;
-font-size: 16px;
+font-size: 15px;
 text-rendering: optimizeLegibility;
 overflow-x: hidden;
+}
+
+a {
+    color:#24433f;
 }
 
 
@@ -34,12 +38,34 @@ overflow-x: hidden;
 /* MEDIA QUERIES */
 
 
+@media (max-height: 480px){
+    .headerimg {height: 60%!important;}
+}
+@media (max-width: 160px){
+    body{
+        font-size: 70%!important;
+    }
+    .headerimg h3 { display:none!important; }
+    .headerimg h2 {font-size: 2em!important;}
+    .headerimg {max-height:30%!important;}
+    .headerimg {background-attachment:contain!important;}
+}
+
+
+  
+/* * All preexisting media queries are being folded.
+
+
+
+
+
 @media only screen and (max-width: 1250){
     .headerimg{
     height: 68%;
     background-size:contain!important;
 }
 }
+
 @media only screen and (max-width: 950px) {
     .category-list{
         font-size: 0.91em;
@@ -155,15 +181,14 @@ text-align:center;
 .category-header h1 {
     text-align: center;
 
-/*
-    font-size: 40px;
-    margin: 12px;
-*/
     }
 }
 
 
+*/
+
 /*
+
 @media only screen and (max-width:450px){
     .headerimg{
         height: 68%!important;
@@ -171,12 +196,13 @@ text-align:center;
     }
 }
 */
+/*
 
 @media only screen and (max-width:430px){
-/*    .searchitems btn-primary{*/
-/*    width: 15%;*/
-/*    margin: 50xr%;
-}*/
+    .searchitems btn-primary{
+    width: 15%;
+    margin: 50xr%;
+}
     
     .headerimg {
         height: 66%!important;
@@ -187,14 +213,18 @@ text-align:center;
     }
     
 }
+*/
 
+/*
 @media only screen and (max-width: 320px){
     .headerimg {
         height: 22%!important;
         background-size:cover!important;
     }
 }
+*/
 
+/*
 @media only screen and (max-width: 160px){
     
     .headerimg{
@@ -204,6 +234,12 @@ text-align:center;
     
 }
 
+*/
+
+
+
+
+
 /*
  * ===============
  * 
@@ -212,13 +248,13 @@ text-align:center;
  * ===============
  * 
  * 
- down here **/
-
+ down here *
+*/
 
 
 
 body {
-background-color: #cecede;
+background-color: rgba(229, 186, 159, 0.99);
 }
 
 /*
@@ -239,25 +275,25 @@ background-color: #cecede;
 }
 .headerimg {
     background: url(../img/JustHorses_logo-cropped-v6.jpg);
-    background-size:contain;
+    background-size:cover;
     background-position:top center;
     background-repeat: no-repeat;
-    height: 70%;
+    height: 45%;
 }
 
 
 .headerimg h2{
-    font-size: 2.3em;
+    font-size: 1.9em;
     line-height:normal;
-    padding-top: 34%
+    padding-top: 10%
 }
 
 .headerimg h3{
-    font-size:1.75em;
-    font-family: 'Roboto Slab';
-    margin:0 5%;
+    font-size:1.55em;
+    font-family: 'Caveat';
+    margin:0 3%;
     line-height:normal;
-    padding-top: 28px;
+    padding-top: 32%;
     padding-bottom:5px;
 }
 
@@ -274,13 +310,6 @@ background-color: #cecede;
     line-height: normal;
 /*  background-color: #cedece;*/
 }
-
-
-/*
-.searchbox{
-    margin: -15px;
-}
-*/
 
 .searchitems {
 /*    margin: 0 auto;*/
@@ -387,7 +416,19 @@ transition: ease-in-out 0.8s;
 }
 
 
+.category-header h1{
+    font-size: 2em;
+    padding-bottom:0;
+    margin-bottom:0;
+}
 
+.category-list li{
+    font-size: 1em;
+}
+
+.category-list ul{
+    margin-bottom: 0px;
+}
 
 
 
