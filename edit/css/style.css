@@ -56,13 +56,15 @@ overflow-x: hidden;
     }
     
     .headerimg {
-        background-size:cover!important;
+        background-size:contain!important;
+        height: 68%;
     }
 }
 
 @media (max-width:820px){
     .headerimg {
         height: 66%!important;
+        background-size:contain!important;
     }
 }
 
@@ -77,8 +79,8 @@ overflow-x: hidden;
             margin-bottom: 0px;
         }
         .headerimg {
-            background-size:cover!important;
-    height: 58%!important;}
+            background-size:contain!important;
+    height: 68%!important;}
 
 h1{
   margin-bottom: 0px;
@@ -109,14 +111,14 @@ h1{
 
 @media only screen and (max-width:716px){
     .headerimg {
-        height: 50%!important;
+        height: 60%!important;
         background-size:contain!important;
     }
 }
 
 @media only screen and (max-width: 660px){
     .headerimg{
-        height:55%!important;
+        height:68%!important;
         background-size:contain!important;
     }
 }
@@ -159,12 +161,16 @@ text-align:center;
 */
     }
 }
+
+
+/*
 @media only screen and (max-width:450px){
     .headerimg{
-        height: 66%!important;
-        background-size:cover!important;
+        height: 68%!important;
+        background-size:contain!important;
     }
 }
+*/
 
 @media only screen and (max-width:430px){
 /*    .searchitems btn-primary{*/
@@ -184,8 +190,18 @@ text-align:center;
 
 @media only screen and (max-width: 320px){
     .headerimg {
-        height: 62%!important;
+        height: 22%!important;
+        background-size:cover!important;
     }
+}
+
+@media only screen and (max-width: 160px){
+    
+    .headerimg{
+        height: 30%!important;
+        background-size:cover!important;
+    }
+    
 }
 
 /*
@@ -223,10 +239,10 @@ background-color: #cecede;
 }
 .headerimg {
     background: url(../img/JustHorses_logo-cropped-v6.jpg);
-    background-size:cover;
+    background-size:contain;
     background-position:top center;
     background-repeat: no-repeat;
-    height: 65%;
+    height: 70%;
 }
 
 
