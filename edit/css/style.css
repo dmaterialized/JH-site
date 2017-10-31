@@ -250,9 +250,6 @@ text-align:center;
 */
 
 
-
-
-
 /*
  * ===============
  * 
@@ -263,7 +260,6 @@ text-align:center;
  * 
  down here *
 */
-
 
 
 body {
@@ -317,6 +313,12 @@ background-color: rgb(234, 183, 114);
     text-shadow: 2px 3px 4px #000;
 }
 
+
+.directorylink {
+    margin-top: 30px;
+    clear: both;
+/*    float:left;*/
+}
 
 .parallax {
     background-color:#87B0CB;
