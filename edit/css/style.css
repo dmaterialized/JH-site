@@ -25,6 +25,10 @@ text-rendering: optimizeLegibility;
 overflow-x: hidden;
 }
 
+body {
+    margin-bottom: 80px;
+}
+
 a {
     color:#24433f;
 }
@@ -315,10 +319,11 @@ background-color: rgb(234, 183, 114);
 
 
 .directorylink {
-    margin-top: 30px;
-    clear: both;
+    padding-bottom:0px;
 /*    float:left;*/
+
 }
+
 
 .parallax {
     background-color:#87B0CB;
@@ -482,11 +487,11 @@ navbar-nav {
 =========================== FOOTER ===============================
  */
 .footer {
-  display: block;
-  clear:left;
-  height: 180px;
-    overflow:visible;
-    margin-top: 15px;
+  height: 145px;
+    position: absolute!important;
+    width: 100%!important;
+    bottom: 0!important;
+    margin-top: 25px;
   padding: 10px 0px 0px 0px;
   background-color: #CAB09B;
 /*    background-color: #e9c89e;*/
