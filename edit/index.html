@@ -8,11 +8,14 @@ and the rest is just a long list.
 
 TODO:
 
+> replace horse image
 > view the directory - correct image placement
 > banner ads at the bottom
 > social links
+> add my link to footer
 > create other pages (side pages)
 > get footer to fill bottom of page (stick to bottom)
+> properly scale directory to fit smaller screens
 
 -->
   <head>
@@ -41,10 +44,11 @@ TODO:
       <!-- add viewport so mobile devices set everything to 1.0 scale. !-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="wrapper">
+<div class="content">
     
 <div class="header">
-        <div class="headerimg"><div class="header-text"><h2>Just Horses</h2><h3>A Directory for New England & Eastern New York</h3></div>
+
+    <div class="headerimg"><div class="header-text"><h2>Just Horses</h2><h3>A Directory for New England & Eastern New York</h3></div>
 <!--    <img src="img/JustHorses_logo-scaled-v5.jpg"  alt="Just Horses logo">-->
     </div>
 <!--
@@ -93,12 +97,18 @@ TODO:
 
       <!-- end header-->
  
+            <!-- directorylink section -->
+<div class="container directorylink-right justify-content-right">
+<div class="row justify-content-right">
+     <!-- directory link -->
+         <ul><li class="nav-item">
+          <img src="/img/2017JustHorses_cover.jpg" class="rounded img-thumbnail">
+          <a class="nav" href="#">View the Directory</a>
+    </li></ul>
+      </div>
+</div>
     </div>
-
-
-   
-            
-          
+  
         <!-- old version below -->  
           <!--
 <nav class="nav"></nav>
@@ -117,7 +127,7 @@ TODO:
 <!--<input type="text" class="col" name="search" value="Search" action="submit">-->
 
     <!-- end parallax -->
-    </div>
+<!--    </div>-->
     
     <!-- end header -->
     
@@ -125,15 +135,12 @@ TODO:
     <div class="container">  
         <div class="category-header">
             <h1> Major Categories</h1>
-            
         </div>
-      <div class="category-list">
          
           <!-- TODO: maybe make this scale to three columns -->
       <!-- this is where the list starts and splits into 2 divs. -->
       <div class="row">
-         
-          <div class="col-md-4">
+          <div class="col-md-6 category-list">
               <!-- div 1 -->
           <ul>
               <li><a href="#">Abuse - Horses - Humane Organizations</a></li>
@@ -149,24 +156,8 @@ TODO:
               <li><a href="#">Farm Services</a></li>
           </ul>
             </div>
-<div class="col-md-4">
-         <!-- directorylink section -->
-<div class="container justify-content-center">
-<div class="row justify-content-center">
-     <!-- directory link -->
-
-<div class="directorylink">   
-         <ul><li class="nav-item">
-          <img src="/img/2017JustHorses_cover.jpg" class="rounded img-thumbnail">
-          <a class="nav" href="#">View the Directory</a>
-    </li></ul>
-      </div>
-</div>
-   
-    </div>
-         </div>
-         
-          <div class="col-md-4"><!-- div 2 -->
+                 
+          <div class="col-md-6 category-list"><!-- div 2 -->
           <ul>
           <li><a href="#">Feed - Hay - Bedding</a></li>
           <li><a href="#">Fun With Horses</a></li>
@@ -184,20 +175,34 @@ TODO:
           </ul>   
           </div>
       </div> <!-- end row -->
-    </div>
+       <br />
         <!-- end cat list -->
        
-       
-        
+       <div class="ads">
+           
+           <hr />
+           <a href="#">ad goes here</a>
+           <a href="#">ad goes here</a>
+           <a href="#">ad goes here</a>
+           <a href="#">ad goes here</a>
+           <a href="#">ad goes here</a>
+           <a href="#">ad goes here</a>
+           <a href="#">ad goes here</a>
+           
+       </div> <!-- end ads -->
+            
+    </div>
 <!-- end wrapper -->  
 </div>    
         
-<div class="footer">
-            <h1>Just Horses is published each April -  Web listings are updated quarterly.<br /><br />Copies of Just Horses can be obtained FREE in tack and feed stores and by mail. <br />Send $2.50 postage to: Just Horses, PO Box 10, Huntington, MA 01050
-                <br />  
-                <br/>
-                Listing in Just Horses directory implies no endorsement by Just Horses or the Young Equestrian Fund, Inc.</h1>
+<footer class="footer">
+    <div class="inner">
+        <h4>Just Horses is published each April -  Web listings are updated quarterly.<br /><br />Copies of Just Horses can be obtained FREE in tack and feed stores and by mail. <br />Send $2.50 postage to: Just Horses, PO Box 10, Huntington, MA 01050
+        <br />  
+        <br/>
+        Listing in Just Horses directory implies no endorsement by Just Horses or the Young Equestrian Fund, Inc.</h4>
       </div>
+    </footer>
       <!-- end footer -->
       
       

@@ -18,16 +18,25 @@ margin:0;
 padding: 0;
 }
 
+html{
+ height: 100%;   
+}
+
 html,body {font-family: 'Merienda One', 'Lato', 'Arial';
 font-weight: 300;
 font-size: 15px;
 text-rendering: optimizeLegibility;
 overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 body {
-    margin-bottom: 80px;
+min-height: 100%;
+    min-width: 100%;
+    display: table;
 }
+
+
 
 a {
     color:#24433f;
@@ -49,24 +58,63 @@ a {
 }
 */
 
+/* above 620 */
+/*
 @media (min-width: 620px){
-    .headerimg {
-        background-size:contain!important;
-    }
+    .headerimg {background-size:contain!important;}
     .headerimg h2 {padding-top: 50px!important;}
+    .directorylink-right{ left: 85%!important;}
 }
+*/
+
+/* HEIGHT specific*/
+/*
 @media (max-height: 480px){
-    .headerimg {height: 60%!important;}
+.headerimg {height: 60%!important;}
 }
+*/
+
+/* above 160 */
+/*
 @media (max-width: 160px){
     body{
-        font-size: 70%!important;
+        font-size: 66%!important;
     }
     .headerimg h3 { display:none!important; }
     .headerimg h2 {font-size: 2em!important;}
     .headerimg {max-height:30%!important;}
     .headerimg {background-size:contain!important;}
 }
+*/
+/*
+
+@media (min-width: 449px){
+    .directorylink-right{
+        display:none;
+    }
+}
+*/
+
+
+/*
+@media (max-width: 450px){
+    .directorylink-right {
+        
+    }
+}
+*/
+
+/* correction for +160px */
+/*
+@media (max-width: 162px){
+
+    .directorylink-right{ left: 35%!important;
+    margin-top: 100px!important;
+    clear:both;    
+    float:left;}
+
+}
+*/
 
 
   
@@ -191,9 +239,6 @@ margin-top:-10px;
 text-align:center;
 }
    
-    .footer h1 {
-        margin: 1px 25px!important;
-    }
     
 .category-header h1 {
     text-align: center;
@@ -322,6 +367,19 @@ background-color: rgb(234, 183, 114);
     padding-bottom:0px;
 /*    float:left;*/
 
+}
+
+.directorylink-right {
+    position: absolute;
+    left: 90%;
+    top: 8px;
+/*    float:right;*/
+    clear: left;
+    width: 120px;
+}
+
+.directorylink-right a{
+    font-size: 85%;
 }
 
 
@@ -486,24 +544,42 @@ navbar-nav {
 /*
 =========================== FOOTER ===============================
  */
+
 .footer {
-  height: 145px;
-    position: absolute!important;
-    width: 100%!important;
-    bottom: 0!important;
-    margin-top: 25px;
-  padding: 10px 0px 0px 0px;
+    display: table-footer-group;
+/*
+ *
+position: absolute;
+  bottom: 0!important;
+  width: 100%;
+*/
+/*   Set the fixed height of the footer here */
+/*
+  height: 185px;
+  line-height: 50px; 
+*/
+    /* Vertically center the text there */
   background-color: #CAB09B;
 /*    background-color: #e9c89e;*/
 /*  background-color: #dedece;*/
 }
 
+.inner{
+    padding: 20px;
+}
+
+.content {
+    display: table-row-group;
+}
+/*
+
 .footer h1{
   font-size: 1em;
   margin-top:0px;
-  padding: 10px 2px;
+  padding: 10px 1px;
   text-align: center;
 }
+*/
 
 /*
  ================ PARALLAX TRICKS =====================
