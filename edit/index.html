@@ -30,7 +30,7 @@ TODO:
 
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <!-- our stylesheet -->
 <link rel="stylesheet" href="css/style.css"  />
 <link rel="stylesheet" ref="../vendors/css/grid.css" />
@@ -40,17 +40,13 @@ TODO:
 </head>
 
     
-  <body>
+  <body class="d-flex flex-column">
       <!-- add viewport so mobile devices set everything to 1.0 scale. !-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="content">
-    
-<div class="header">
+<div class="headerimg"><div class="header-text"><h2>Just Horses</h2><h3>A Directory for New England & Eastern New York</h3></div>
 
-    <div class="headerimg"><div class="header-text"><h2>Just Horses</h2><h3>A Directory for New England & Eastern New York</h3></div>
 <!--    <img src="img/JustHorses_logo-scaled-v5.jpg"  alt="Just Horses logo">-->
-    </div>
 <!--
       <div class="parallax">
           
@@ -58,9 +54,64 @@ TODO:
           </div>
 -->
       
+    <div class="content">
+
+<! ====== NAV AREA =========>
+        
+<!--    rebuilt nav area -->
     
-    <! ====== NAV AREA =========>
- 
+    <nav class="navbar navbar-light bg-light navbar-nav navbar-expand-md  mb-1">
+    <a href="/" class="navbar-brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="collapsingNavbar1">
+
+        <ul class="navbar-nav justify-content-center">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+        
+    </div>
+        <ul class="navbar nav w-100 justify-content-end ">
+            <div class="specialfloat"><li class="nav-item">
+                <li><img src="/img/2017JustHorses_cover.jpg" class="rounded">
+          <a class="nav" href="#">View the Directory</a>
+            </li>
+                </div>
+        </ul>
+
+<!--
+    <nav class="navbar navbar-light navbar-expand-md bg-light">
+        <a href="/" class="navbar-brand">JH</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar"><span class="navbar-toggler-icon"></span></button>
+    <div class="navbar-collapse collapse" id="collapsingNavbar">
+        <ul class="navbar-nav justify-content-center">
+        <li class="nav-item active">
+            <a class="nav-link" href="#"> Link </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>  
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="#">RIGHT</a></li></ul>
+        </div>    
+    </nav>
+-->
+<!--
+
     <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -84,30 +135,40 @@ TODO:
         <a class="nav-link" href="#">History</a>
       </li>
     </ul>
+-->
     
-    <!-- search box -->
+<!-- search box -->
+<!--
 <form class="form-inline my-2 my-md-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search the Directory">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
-     <!-- end navbar-->
-      </div>
-</nav>
-    <! ====== END NAV AREA =========>
-
-      <!-- end header-->
+-->
+      
+     <!-- end collapsible navbar-->
+<!--      </div>-->
+        
+        
+</nav> <!-- end full navbar -->
+        
+<!--   ====== END NAV AREA ========= -->
+    </div> <!-- end header-->
  
-            <!-- directorylink section -->
+    
+        <!-- directorylink section -->
 <div class="container directorylink-right justify-content-right">
 <div class="row justify-content-right">
      <!-- directory link -->
          <ul><li class="nav-item">
+<!--
           <img src="/img/2017JustHorses_cover.jpg" class="rounded img-thumbnail">
           <a class="nav" href="#">View the Directory</a>
-    </li></ul>
-      </div>
+-->
+    </li>
+    </ul>
+    </div> <!-- end row -->
 </div>
-    </div>
+
   
         <!-- old version below -->  
           <!--
@@ -130,18 +191,18 @@ TODO:
 <!--    </div>-->
     
     <!-- end header -->
+        </div>
     
     <!-- =======CATEGORY LIST========= -->
-    <div class="container">  
-        <div class="category-header">
-            <h1> Major Categories</h1>
-        </div>
-         
-          <!-- TODO: maybe make this scale to three columns -->
-      <!-- this is where the list starts and splits into 2 divs. -->
+    <section class="container-fluid flex-grow">
+     <!-- this is where the list starts and splits into 2 divs. -->
       <div class="row">
-          <div class="col-md-6 category-list">
-              <!-- div 1 -->
+             <h1> Major Categories</h1>
+          <br />
+        </div>
+          <!-- div 1 --></div>
+        <div class="row">
+          <div class="col-md-6 category-list order-md-1 pt-1">
           <ul>
               <li><a href="#">Abuse - Horses - Humane Organizations</a></li>
               <li><a href="#">Art and Photography - Equine</a></li>
@@ -156,8 +217,7 @@ TODO:
               <li><a href="#">Farm Services</a></li>
           </ul>
             </div>
-                 
-          <div class="col-md-6 category-list"><!-- div 2 -->
+          <div class="col-md-6 category-list order-md-2 pt-1"><!-- div 2 -->
           <ul>
           <li><a href="#">Feed - Hay - Bedding</a></li>
           <li><a href="#">Fun With Horses</a></li>
@@ -178,8 +238,8 @@ TODO:
        <br />
         <!-- end cat list -->
        
-       <div class="ads">
-           
+       <div class="ads p-2 mb-4">
+    
            <hr />
            <a href="#">ad goes here</a>
            <a href="#">ad goes here</a>
@@ -191,24 +251,26 @@ TODO:
            
        </div> <!-- end ads -->
             
-    </div>
+    </section>
 <!-- end wrapper -->  
-</div>    
+      </div>    
         
-<footer class="footer">
-    <div class="inner">
-        <h4>Just Horses is published each April -  Web listings are updated quarterly.<br /><br />Copies of Just Horses can be obtained FREE in tack and feed stores and by mail. <br />Send $2.50 postage to: Just Horses, PO Box 10, Huntington, MA 01050
-        <br />  
-        <br/>
-        Listing in Just Horses directory implies no endorsement by Just Horses or the Young Equestrian Fund, Inc.</h4>
-      </div>
-    </footer>
-      <!-- end footer -->
+<footer class="footer m-0 p-3 ">
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Just Horses is published each April -  Web listings are updated quarterly.</h4></div>
+                <div class="col-md-4"><h4>Copies of Just Horses can be obtained FREE in tack and feed stores and by mail. Send $2.50 postage to: Just Horses, PO Box 10, Huntington, MA 01050</h4></div>
+         <!-- end col -->
+        <div class="col-md-4">
+        <h4>Listing in Just Horses directory implies no endorsement by Just Horses or the Young Equestrian Fund, Inc.</h4>
+        </div> <!-- end col -->
+        </div> <!-- end row -->
+    </footer> <!-- end footer -->
+      
       
       
       <!-- jQuery, then Tether, then Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     </body>
 </html>
